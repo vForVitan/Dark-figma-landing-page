@@ -1,0 +1,100 @@
+/* colors */
+:root {
+  --color-primary: #ef2779;
+  --color-secondary-one: #7834be;
+  --color-secondary-two: #38a3f1;
+  --color-text: #252b42;
+  --color-second-text: #374754;
+  --color-light-text: #ffffff;
+  --color-dark-background: #252b42;
+  --color-light-background: #ffffff;
+  --color-background-gradient: linear-gradient(
+    45deg,
+    var(--color-primary) 0%,
+    var(--color-secondary-one) 100%
+  );
+}
+
+/* fonts */
+
+.heading-1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: calc(55rem / 16);
+  line-height: calc(65.5rem / 16);
+  letter-spacing: calc(0.2rem / 16);
+}
+.heading-2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: calc(46rem / 16);
+  line-height: calc(57rem / 16);
+  letter-spacing: calc(0.2rem / 16);
+}
+.heading-3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: calc(22rem / 16);
+  line-height: calc(33rem / 16);
+  letter-spacing: calc(0.1rem / 16);
+}
+.heading-4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: calc(16rem / 16);
+  line-height: calc(20rem / 16);
+  letter-spacing: calc(0.2rem / 16);
+}
+.heading-6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: calc(12rem / 16);
+  line-height: calc(18rem / 16);
+  letter-spacing: calc(0.1rem / 16);
+}
+
+.text-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: calc(16rem / 16);
+  line-height: calc(16rem / 16);
+  letter-spacing: calc(0.2rem / 16);
+}
+.text-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: calc(18rem / 16);
+  line-height: calc(27rem / 16);
+  letter-spacing: calc(0.2rem / 16);
+}
+.text-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: calc(15rem / 16);
+  line-height: calc(27rem / 16);
+  letter-spacing: calc(0.2rem / 16);
+  text-decoration: none;
+}
+
+.text-mobile-menu {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: calc(30rem / 16);
+  line-height: calc(45rem / 16);
+  letter-spacing: calc(0.2rem / 16);
+}
+.text-email-input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: calc(14rem / 16);
+  line-height: calc(16rem / 16);
+  letter-spacing: calc(0.1rem / 16);
+}
+.text-email-input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: calc(14rem / 16);
+  line-height: calc(16rem / 16);
+  letter-spacing: calc(0.1rem / 16);
+  color: var(--color-text);
+}
