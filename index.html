@@ -19,35 +19,43 @@
       <a href="index.html"
         ><img src="assets/images/logo.png" alt="logo" class="navbar-logo"
       /></a>
+      <button class="navbar-link-hamburger" id="hamburgerButton">
+        <img src="assets/icons/bx_bx-menu-alt-right.png" />
+      </button>
       <section class="navbar-link-section">
         <a href="#nav" class="text-link navbar-link">Home</a>
         <a href="#hero-section" class="text-link navbar-link">Product</a>
         <a href="#prototyping" class="text-link navbar-link">About</a>
         <a href="#pricing" class="text-link navbar-link">Pricing</a>
         <a href="#contact" class="text-link navbar-link">Contact</a>
-        <section class="navbar-subscribe-section">
-          <form>
-            <input
-              type="email"
-              aria-label="Input your email"
-              class="text-email-input email-input"
-              placeholder="Your Email"
-            />
-            <button type="submit" class="text-button navbar-subscribe-button">
-              Subscribe
-            </button>
-          </form>
-        </section>
+        <form id="emailSubscribeForm" class="navbar-subscribe-section">
+          <input
+            type="email"
+            aria-label="Input your email"
+            class="text-email-input email-input"
+            placeholder="Your Email"
+          />
+          <button type="submit" class="text-button navbar-subscribe-button">
+            Subscribe
+          </button>
+        </form>
       </section>
     </nav>
     <header id="header">
+      <section class="header-text-inner header-text-mobile">
+        <h1 class="heading-2 header-h1">Lightning fast prototyping</h1>
+        <h4 class="heading-4">
+          Most calendars are designed for teams. Slate is designed for
+          freelancers
+        </h4>
+      </section>
       <img
-        src="assets/images/Flat Browser.jpg"
+        src="assets/images/screen2.png"
         alt="Browser image"
         class="header-image"
       />
       <section class="header-text">
-        <section class="header-text-inner">
+        <section class="header-text-inner header-text-pc">
           <h1 class="heading-1 header-h1">We focus on ergonomics</h1>
           <h4 class="heading-4">
             Most calendars are designed for teams. Slate is designed for
@@ -56,47 +64,47 @@
         </section>
         <button class="text-button header-button">Try For Free</button>
       </section>
-      <svg
-        viewBox="0 0 1440 933"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        class="gradient-background-top"
-      >
-        <path
-          opacity="0.19"
-          d="M1 55H1440V828.5C1440 828.5 1186 891.089 704 765.727C222 640.366 1 932.5 1 932.5V55Z"
-          fill="url(#paint0_linear_105_2253)"
-        />
-        <path
-          d="M1 -3H1440V746.421C1440 746.421 1181.5 871.877 699.5 746.421C217.5 620.964 1 758 1 758V-3Z"
-          fill="url(#paint1_linear_105_2253)"
-        />
-        <defs>
-          <linearGradient
-            id="paint0_linear_105_2253"
-            x1="1130.5"
-            y1="55"
-            x2="519.886"
-            y2="1190.55"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#EC007F" />
-            <stop offset="1" stop-color="#0094E7" stop-opacity="0.69" />
-          </linearGradient>
-          <linearGradient
-            id="paint1_linear_105_2253"
-            x1="26"
-            y1="802.179"
-            x2="472.667"
-            y2="-150.206"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#EF2779" />
-            <stop offset="1" stop-color="#7834BE" />
-          </linearGradient>
-        </defs>
-      </svg>
     </header>
+    <svg
+      viewBox="0 0 1440 933"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="gradient-background-top"
+    >
+      <path
+        opacity="0.19"
+        d="M1 55H1440V828.5C1440 828.5 1186 891.089 704 765.727C222 640.366 1 932.5 1 932.5V55Z"
+        fill="url(#paint0_linear_105_2253)"
+      />
+      <path
+        d="M1 -3H1440V746.421C1440 746.421 1181.5 871.877 699.5 746.421C217.5 620.964 1 758 1 758V-3Z"
+        fill="url(#paint1_linear_105_2253)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_105_2253"
+          x1="1130.5"
+          y1="55"
+          x2="519.886"
+          y2="1190.55"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#EC007F" />
+          <stop offset="1" stop-color="#0094E7" stop-opacity="0.69" />
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear_105_2253"
+          x1="26"
+          y1="802.179"
+          x2="472.667"
+          y2="-150.206"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#EF2779" />
+          <stop offset="1" stop-color="#7834BE" />
+        </linearGradient>
+      </defs>
+    </svg>
     <main>
       <section id="hero-section" class="hero-section">
         <section class="hero-section-headings">
@@ -169,8 +177,8 @@
         <button class="text-button blue-button">Try For Free</button>
         <img
           src="./assets/images/macbook.png"
-          alt=""
-          class="image of a mackbook"
+          alt="image of a computer"
+          class="prototyping-image"
         />
       </section>
       <section id="landings" class="landings">
@@ -238,7 +246,7 @@
             </section>
           </section>
 
-          <section class="partners-row">
+          <section class="partners-row partners-row-hide">
             <section class="partner-container">
               <h6 class="heading-6">Client Name</h6>
               <img

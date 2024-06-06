@@ -6,7 +6,6 @@ body {
 }
 .gradient-background-top {
   width: 100%;
-  height: auto;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -19,17 +18,42 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding-top: 38px;
+  gap: 44px;
 }
 .navbar-logo {
   margin-left: 20px;
   padding: 0px 20px 0px 20px;
 }
 .navbar-link-section {
-  align-self: end;
   display: flex;
+  align-self: end;
   flex-wrap: wrap;
   gap: 21px;
   margin: 0 40px 0 40px;
+}
+@media only screen and (max-width: 1310px) {
+  .navbar-link-section {
+    display: none;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    gap: 10px;
+    margin-right: 0 5px 0 0;
+  }
+}
+.navbar-link-hamburger {
+  display: none;
+}
+@media only screen and (max-width: 1310px) {
+  .navbar-link-hamburger {
+    display: inline-block;
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
 }
 .navbar-link {
   padding: 10px;
@@ -38,16 +62,20 @@ nav {
 .navbar-subscribe-section {
   margin-left: 44px;
 }
+@media only screen and (max-width: 1310px) {
+  .navbar-subscribe-section {
+    display: none;
+  }
+}
 .email-input {
   background: var(--color-light-background);
-  width: 273px;
   padding: 19px 39px;
-  width: 273px;
   height: 54px;
   border: 0;
   border-radius: 39px;
   color: var(--color-text);
 }
+
 .navbar-subscribe-button {
   margin-left: 12px;
   background: var(--color-light-background);
@@ -58,29 +86,62 @@ nav {
   color: var(--color-primary);
   cursor: pointer;
 }
+
 header {
   display: flex;
-  padding: 104px 82px 104px 0px;
+  flex-wrap: wrap;
+  padding: 104px 82px 104px 0;
+  gap: 10px;
+  color: var(--color-light-text);
 }
+@media only screen and (max-width: 1310px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 104px 0 104px 0;
+    gap: 40px;
+  }
+}
+.header-text-mobile {
+  display: none;
+}
+@media only screen and (max-width: 1310px) {
+  .header-text-mobile {
+    display: inline-block;
+    text-align: center;
+  }
+  .header-text-pc {
+    display: none;
+  }
+}
+
 .header-image {
-  padding-top: 26px;
-  padding-right: 26px;
-  width: 52%;
-  height: 52%;
+  width: 65%;
+}
+@media only screen and (max-width: 1310px) {
+  .header-image {
+    width: 90%;
+  }
 }
 .header-text {
   margin-top: 64px;
-  color: var(--color-light-text);
   margin-left: 60px;
+}
+@media only screen and (max-width: 1310px) {
+  .header-text {
+    margin-left: 0;
+    text-align: center;
+  }
 }
 .header-h1 {
   margin-bottom: 27px;
 }
 .header-text-inner {
   max-width: 321px;
+  margin-bottom: 60px;
 }
 .header-button {
-  margin-top: 60px;
   color: var(--color-secondary-two);
   background: var(--color-light-background);
   padding: 19px 38px 19px 38px;
@@ -113,6 +174,11 @@ header {
   flex-wrap: wrap;
   padding: 0 10px 0 10px;
 }
+@media only screen and (max-width: 1310px) {
+  .hero-section-items {
+    flex-direction: column;
+  }
+}
 .hero-item {
   max-width: 255px;
 }
@@ -123,6 +189,7 @@ header {
   gap: 10px;
   margin-bottom: 20px;
 }
+
 .prototyping {
   display: flex;
   flex-direction: column;
@@ -137,6 +204,9 @@ header {
 }
 .prototyping-headings-heading-2 {
   margin-bottom: 27px;
+}
+.prototyping-image {
+  width: 100%;
 }
 .blue-button {
   background: var(--color-secondary-two);
@@ -211,6 +281,18 @@ header {
   flex-wrap: wrap;
   padding: 0 10px 0 10px;
 }
+.partners-row-hide {
+  display: flex;
+}
+@media only screen and (max-width: 1310px) {
+  .partners-row-hide {
+    display: none;
+  }
+  .partners-row {
+    flex-direction: column;
+  }
+}
+
 .partner-container {
   max-width: 238px;
   display: flex;
@@ -333,6 +415,8 @@ header {
   display: flex;
   gap: 65px;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .primary-button {
   background: var(--color-primary);
@@ -394,6 +478,7 @@ textarea::placeholder {
 }
 .footer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
